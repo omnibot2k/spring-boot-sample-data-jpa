@@ -32,9 +32,8 @@ public class EmailStatus implements Serializable {
     @JoinColumn(name = "email_id", nullable = false)
     private Email email;
 
-
     @Column(nullable = false)
-    @Enumerated(EnumType.ORDINAL)
+    @Enumerated(EnumType.STRING)
     private EmailStatusEnum status;
 
     @Column(nullable = true)
