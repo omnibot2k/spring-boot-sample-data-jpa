@@ -184,3 +184,21 @@ insert into city(country, name, state, map) values ('USA', 'Washington', 'DC', '
 insert into hotel(city_id, name, address, zip) values (21, 'Hotel Rouge', '1315 16th Street NW', '20036')
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (27, 0, '2000-01-29', 0, 2, 'Never again', 'I will never ever stay here again!!  They wanted extra cash to get fresh batteries for the TV remote')
 insert into review(hotel_id, idx, check_in_date, rating, trip_type, title, details) values (27, 1, '2006-02-20', 0, 0, 'Avoid', 'This place is the pits, they charged us twice for a single night stay.  I only got refunded after contacting my credit card company.')
+
+--
+-- Sample dataset containing email
+--
+
+-- =================================================================================================
+-- Email
+
+-- Jon doe
+insert into email(from_address, to_address, subject) values ('from@gmail.com', 'jdoe@gmail.com', 'wassup')
+insert into email(from_address, to_address, subject) values ('from2@gmail.com', 'jdoe2@gmail.com', 'yo')
+insert into email(from_address, to_address, subject) values ('from2@gmail.com', 'jdoe2@gmail.com', 'go giants')
+insert into email(from_address, to_address, subject) values ('from2@gmail.com', 'jdoe4@gmail.com', 'wassup')
+
+insert into email(from_address, to_address, subject) values ('from2@gmail.com', 'jdoe5@gmail.com', 'dude')
+insert into email_status(email_id, status, response_id) values (5, 'PENDING', '123123dsgfsdfg')
+insert into email_status(email_id, status, response_id) values (5, 'RECEIVED', '123123dsgfsdfg')
+
